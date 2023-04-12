@@ -78,7 +78,8 @@ body {
 .home {
   height: 1000px;
   max-width: 100%;
-  background-image: url(fondo.png);
+  background-image: url(/images/fondo.png);
+  box-shadow: 1px 1px 5px;
   justify-content: space-around;
   display: flex;
 }
@@ -96,36 +97,31 @@ body {
 
 .about-me {
   background-image: url(5cmpersecond.jpg);
-  padding-top: 80px;
   height: 1080px;
   font-size: 25px;
-  columns: 2;
-}
-.about-me h1, h2, p{
-  line-height: 80px;
-}
-.botton-cv{
-  margin: 0 40px;
-  padding: 5px 40px 5px 10px;
-  border-radius: 10px;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.skills{
-  padding-top: 80px;
-  height: 1080px;
-  background-color: #034574;
+
+
+/* .botton-cv {
+  margin: 0 40px;
+  padding: 5px 40px 5px 10px;
+  border-radius: 10px;
 }
 
-.services{
+
+.services {
   padding-top: 80px;
   height: 1080px;
 }
-.portafolio{
+.portafolio {
   padding-top: 80px;
   height: 1080px;
 }
-.conctact{
+.conctact {
   padding-top: 80px;
   height: 1080px;
 }
@@ -180,4 +176,4 @@ body {
   .nav-menu_visible {
     left: 0;
   }
-}
+} */
