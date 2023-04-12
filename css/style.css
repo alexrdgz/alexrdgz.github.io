@@ -79,6 +79,8 @@ body {
   height: 1000px;
   max-width: 100%;
   background-image: url(/images/fondo.png);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
   box-shadow: 1px 1px 5px;
   justify-content: space-around;
   display: flex;
