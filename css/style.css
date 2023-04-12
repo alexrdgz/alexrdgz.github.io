@@ -93,23 +93,55 @@ body {
 .home-w {
   font-size: 40px;
   margin-top: 350px;
+  color: white;
 }
 
 .about-me {
-  background-image: url(5cmpersecond.jpg);
   height: 1080px;
   font-size: 25px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  text-align: ;
+}
+.about-me p {
+  padding-top: 20px;
+  margin: auto;
+  text-align: center;
 }
 
+.content-about {
+  margin: 20px;
+  text-align: center;
+  width: 50%;
+}
 
+.skills {
+  margin: 20px;
+  text-align: center;
+  width: 50%;
+}
+.icons {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.icon-hcj {
+  height: 150px;
+}
 
-/* .botton-cv {
-  margin: 0 40px;
-  padding: 5px 40px 5px 10px;
+.botton-cv {
+  background-color: #2c3e50;
+  color: white;
+  font-size: 20px;
+  margin: 40px 40px;
+  padding: 25px 50px;
   border-radius: 10px;
+}
+
+.botton-cv:hover{
+  cursor: pointer;
 }
 
 
@@ -121,10 +153,20 @@ body {
   padding-top: 80px;
   height: 1080px;
 }
-.conctact {
+
+.contact {
+  background-color: #2c3e50;
   padding-top: 80px;
   height: 1080px;
 }
+.icontact {
+  display: flex;
+  justify-content: space-around;
+}
+.icon-contact {
+  width: 50px;
+}
+
 @media (max-width: 768px) {
   .header {
     background-color: #161616;
@@ -176,4 +218,4 @@ body {
   .nav-menu_visible {
     left: 0;
   }
-} */
+}
