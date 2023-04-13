@@ -85,8 +85,12 @@ body {
   justify-content: space-around;
   display: flex;
 }
+/* .background img {
+  width: 100%;
+  height: 100%;
+} */
 
-.perfilimg {
+.avatar-picture {
   border-radius: 50%;
   height: 400px;
   margin-top: 250px;
@@ -104,7 +108,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  text-align: ;
+  text-align: center;
 }
 .about-me p {
   padding-top: 20px;
@@ -142,10 +146,9 @@ body {
   border-radius: 10px;
 }
 
-.botton-cv:hover{
+.botton-cv:hover {
   cursor: pointer;
 }
-
 
 .services {
   padding-top: 80px;
@@ -157,30 +160,80 @@ body {
 }
 
 .contact {
+  display: flex;
+  align-items: center;
   background-color: #2c3e50;
   padding-top: 80px;
   height: 1080px;
-}
-.icontact {
-  display: flex;
-  justify-content: space-around;
-}
-.icon-contact {
-  width: 50px;
+  justify-content: center;
 }
 
-@media (max-width: 768px) {
+.contact-conten{
+  display: flex;
+  flex-direction: column;
+align-items: center;
+color: #fff;
+  
+
+}
+.contact-conten p{
+  margin-top: 20px;
+  
+}
+
+.icontact {
+  display: flex;
+  column-gap: 20px;
+}
+.icon-contact {
+  margin-top: 20px;
+  display: inline-flex;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  outline: 2px solid #fff;
+  transition-property: outline-offset, outline-color, background-color;
+  transition-duration: 0.25s;
+}
+.icon-contact:hover {
+  outline-offset: 4px;
+}
+.icon-contact a {
+  margin: auto;
+}
+.icontact:hover a {
+  animation: shake 0.25s;
+}
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  30% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-15deg);
+  }
+}
+
+footer{
+  background-color: #161616;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+}
+
+@media (width: 768px) {
   .header {
-    background-color: #161616;
     height: 60px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
   }
   .logo {
-    font-size: 30px;
-    font-weight: bold;
     padding: 0 20px;
     line-height: 60px;
   }
@@ -202,22 +255,70 @@ body {
     transition: left 0.3s;
   }
   .nav-menu-item {
-    font-size: 18px;
-    margin: 0 10px;
-    line-height: 70px;
-    text-transform: uppercase;
-    width: max-content;
-  }
-  .nav-menu-link:hover,
-  .nav-menu-link_active {
-    background: none;
-    color: #83c5f7;
-    transition: 0.5s;
+    line-height: 60px;
   }
   .nav-toggle {
     display: block;
   }
   .nav-menu_visible {
     left: 0;
+  }
+  .home {
+    /* height: 1000px; */
+    flex-direction: column;
+  }
+
+  .perfilimg {
+    padding-top: 0;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+  }
+}
+@media (max-width: 414px) {
+  .home {
+    display: grid;
+    grid-template-rows: 96px 48px 48px 1fr;
+    grid-template-columns: 1fr;
+    border-radius: 20px 20px 16px 16px;
+    background-color: white;
+    cursor: pointer;
+    max-width: 414px;
+  }
+  .home:hover {
+    box-shadow: rgb(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .background {
+    grid-row: 1/3;
+    grid-column: 1 / -1;
+  }
+  .background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px 16px 0px 0px;
+  }
+  .avatar-picture{
+    grid-row: 2 / 4;
+    grid-column: 1 / -1;
+    padding: 0 24px;
+    z-index: 1;
+  }
+  .porfile-name{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    margin: 16px 0 8px 0;
+  }
+  .avatar-picture img{
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .home-w{
+    grid-row: 4 / 5;
+    grid-column: 1 / -1;
+    padding: 0 24px 24px 24px;
   }
 }
